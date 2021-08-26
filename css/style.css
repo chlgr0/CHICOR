@@ -1,0 +1,812 @@
+/* 노멀라이징 */
+* {
+  padding:0;
+  margin:0;
+}
+ul,li{
+  list-style:none;
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+/* 라이브러리 */
+.cell{
+  float:left;
+}
+.cell-r{
+  float: right ;
+}
+.row::after{
+  clear:both;
+  content: "";
+  display: block;
+}
+.con{
+  max-width: 1920px ;
+  margin: 0 auto;
+}
+
+/* 스타일 */
+.container{
+margin: 0 auto ;
+}
+.background{
+height: 700px ;
+background-color: black ;
+}
+
+
+.container > .background > .header{
+width: 100%;
+height: 180px ;
+background-color: black ;
+margin: 0 auto ;
+position: fixed ;
+z-index: 9999 ;
+transform: translate(  );
+}
+
+
+
+
+
+
+.container > .background > .header > .logo-bar{
+width: 1200px ;
+height: 100px ;
+margin: 0 auto ;
+}
+
+
+.container > .background > .header > .logo-bar > .login{
+width: 90px ;
+height: 100px ;
+background-color: black ;
+}
+.container > .background > .header > .logo-bar > .login > p{
+  color: white ;
+  text-align: center ;
+  padding-top: 60px ;
+  box-sizing: border-box ;
+  font-size: 14px ;
+}
+
+
+
+.container > .background > .header > .logo-bar > .join{
+width: 90px ;
+height: 100px ;
+background-color: black ;
+}
+.container > .background > .header > .logo-bar > .join > p{
+  color: white ;
+  text-align: left ;
+  padding-top: 60px ;
+  box-sizing: border-box ;
+  font-size: 14px ;
+}
+
+
+.container > .background > .header > .logo-bar > .logo{
+width: 725px ;
+height: 100px ;
+background-color: black ;
+}
+.container > .background > .header > .logo-bar > .logo > .logo-box > img{
+  margin-top: 30px ;
+  margin-left: 350px ;
+}
+
+
+.container > .background > .header > .logo-bar > .search{
+width: 295px ;
+height: 100px ;
+background-color: black ;
+}
+.container > .background > .header > .logo-bar > .search > .search-box > input{
+  width: 260px ;
+  height: 35px ;
+  margin-top: 50px;
+  box-sizing: border-box ;
+  background-color: white ;
+}
+.container > .background > .header > .logo-bar > .search > .search-box > input{
+  
+  border: transparent;
+  border-radius: 18px;
+  outline: none;
+}
+.container > .background > .header > .logo-bar > .search > .icon{
+  width: 35px ;
+  height: 35px ;
+  background-color: black ;
+  margin-top: 50px ;
+  text-align: center ;
+  line-height: 35px ;
+  font-size: 20px ;
+}
+.container > .background > .header > .logo-bar > .search > .icon > a{
+  color: white ;
+  display: block ;
+}
+
+
+
+
+
+
+.container > .background > .header > .menu-bar{
+width: 1200px ;
+height: 80px ;
+margin: 0 auto ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul{
+width: 720px ;
+height: 80px ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul > li{
+  width: 12.5% ;
+  text-align: center ;
+  line-height: 75px ;
+  font-size: 14px ;
+  position: relative ;
+  color: white ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul > li > a{
+  color: white ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul > li > a:hover{
+  color: hotpink ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul > li > ul{
+  position: absolute ;
+  background-color: black ;
+  color: white ;
+  width: 100%  ;
+  box-sizing: border-box ;
+  overflow: hidden;
+  height: 0px ;
+  transition: 1s ;
+}
+.container > .background > .header > .menu-bar > .section01 > ul:hover > li > ul{
+  display: block ;
+  height: 500px ;
+}
+
+.container > .background > .header > .menu-bar > .section02{
+  width: 480px ;
+  height: 80px ;
+}
+
+.container > .background > .header > .menu-bar > .section02 > ul{
+  width: 315px ;
+  height: 80px ;
+  margin-left: 150px ;
+    
+  }
+  .container > .background > .header > .menu-bar > .section02 > ul > li{
+    width: 25% ;
+    text-align: center ;
+    line-height: 75px ;
+    font-size: 14px ;
+    position: relative ;
+    color: white ;
+    margin-left: 5px ;
+  }
+  .container > .background > .header > .menu-bar > .section02 > ul > li:last-child{
+    text-align: right ;
+    margin-left: -20px ;
+  }
+  .container > .background > .header > .menu-bar > .section02 > ul > li > a{
+    color: white ;
+  }
+  .container > .background > .header > .menu-bar > .section02 > ul > li > a:hover{
+    color: hotpink ;
+  }
+  
+
+
+
+
+
+
+.main-slider{
+max-width: 1314px ;
+height: 600px ;
+margin: 0 auto ;
+}
+.main-slider > .slide-box{
+width: 1180px ;
+height: 600px ;
+margin: 0 auto ;
+transform: translateY(30%);
+box-shadow: 5px 15px 10px rgb(0 0 0 / 10%);
+}
+
+
+
+
+
+
+
+
+.new-arrivals{
+max-width: 1314px ;
+height: 540px ;
+margin: 0 auto;
+margin-top: 150px ;
+}
+.new-arrivals > .text-box{
+max-width: 1200px ;
+height: 100px ;
+margin: 0 auto ;
+}
+.new-arrivals > .text-box > p{
+  font-size: 32px ;
+  text-align: center ;
+  line-height: 100px ;
+}
+.new-arrivals > .item-wrap{
+  width: 1200px ;
+  height: 350px ;
+  margin: 0 auto ;
+  overflow: hidden ;
+}
+.new-arrivals > .item-wrap .item-box {
+  width: 300px ;
+  height: 350px ;
+  margin-left: 50px ;
+  margin-right: 50px ;
+}
+.new-arrivals > .item-wrap .item-box > .text{
+  width: 300px ;
+  text-align: center ;
+  font-size: 11px ;
+  margin-top: 20px;
+}
+
+ .new-arrivals > .item-wrap .item-box > .item{
+width: 300px ;
+height: 300px ;
+margin: 0 auto ;
+border-radius: 50% ;
+box-shadow: 5px 15px 10px rgb(0 0 0 / 30%);
+overflow: hidden ;
+display: flex ;
+}
+
+
+
+.Beauty-trend{
+max-width: 1314px ;
+height: 600px ;
+margin: 0 auto ;
+margin-top: 150px ;
+}
+.Beauty-trend > .text-box{
+max-width: 1200px ;
+height: 100px ;
+margin: 0 auto ;
+}
+.Beauty-trend > .text-box > p{
+  font-size: 32px ;
+  text-align: center ;
+  line-height: 100px ;
+}
+
+
+.Beauty-trend > .trend-wrap{
+max-width: 1200px ;
+height: 500px ;
+margin: 0 auto;
+overflow: hidden ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section01{
+width: 588px ;
+height: 500px ;
+display: flex ;
+position: relative ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section01 > p{
+  font-size: 24px ;
+  padding: 50px ;
+  position: absolute ;
+  line-height: 40px ;
+  color: white ;
+}
+
+
+.Beauty-trend > .trend-wrap .trend-box > .section02{
+width: 500PX ;
+height: 500px ;
+margin-left: 110px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .teg-box{
+width: 100%;
+height: 30px ;
+margin-top: 70px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .teg-box > p{
+  color: gray ;
+  font-size: 18px ;
+  margin-top: 5px ;
+  text-align: right ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .teg-box > .p02{
+margin-left: 20px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .item-box02{
+width: 100% ;
+height: 442px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .item-box02 > .item-01{
+width: 200px ;
+height: 170px ;
+margin-top: 20px ;
+margin-left: 30px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .item-box02 > .item-01:nth-child(2n){
+  
+margin-left: 50px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .item-box02 > .item-01 > img{
+  display: cover ;
+  width: 200px ;
+  height: 170px ;
+}
+.Beauty-trend > .trend-wrap .trend-box > .section02 > .item-box02 > .item-01 > p{
+  width: 200px ;
+  margin: 0 auto;
+  font-size: 11px ;
+  text-align: center ;
+}
+
+
+
+
+
+
+
+.picks-background{
+max-width: 1920px ;
+height: 720px ;
+margin: 0 auto ;
+margin-top: 150px ;
+background-color: black;
+
+}
+.picks-background > .picks-wrap{
+width: 1314px ;
+height: 720px ;
+margin: 0 auto ;
+}
+
+.picks-background > .picks-wrap > .text-box{
+  max-width: 1200px ;
+  height: 100px ;
+  margin: 0 auto ;
+}
+.picks-background > .picks-wrap > .text-box > p{
+  font-size: 32px ;
+  text-align: center ;
+  line-height: 100px ;
+  color: white ;
+}
+
+.picks-background > .picks-wrap > .picks-box{
+  width: 1200px ;
+  height: 430px ;
+  margin: 0 auto ;
+
+}
+.picks-background > .picks-wrap > .picks-box > .pick01{
+  width: 350px ;
+  height: 430px ;
+  position: relative ;
+  overflow: hidden ;
+}
+.picks-background > .picks-wrap > .picks-box > .pick01 > .hover-box{
+  width: 100% ;
+  height: 100% ;
+  position: absolute ;
+  background-color: rgb( 0,0,0,0.5 ) ;
+  top: 0 ;
+  left: 0 ;
+  opacity: 0 ;
+  transition: 0.5s ;
+  color: white ;
+  font-size: 24px ;
+  text-align: center ;
+  line-height: 450px ;
+}
+.picks-background > .picks-wrap > .picks-box > .pick01:hover > .hover-box{
+  opacity:1;
+}
+.picks-background > .picks-wrap > .picks-box > .pick01:hover > img{
+  transform : scale(1.2 , 1.2);
+  transition: 1s ;
+}
+.picks-background > .picks-wrap > .picks-box > .line{
+  width: 1px ;
+  height: 430px ;
+  margin-left: 36.5px ;
+  margin-right: 36.5px ;
+  background-color: white ;
+}
+.picks-background > .picks-wrap > .picks-box > .line2{
+  width: 1px ;
+  height: 430px ;
+  margin-left: 36.5px ;
+  margin-right: 36.5px ;
+  background-color: white ;
+}
+
+.picks-background > .picks-wrap > .more{
+  width: 135px ;
+  height: 35px ;
+  margin: 0 auto ;
+  margin-top: 60px ;
+  border: 0.5px solid white;
+  font-size: 24px ;
+  text-align: center ;
+  line-height: 28px ;
+  border: 0.5px solid #ddd;
+  color: white ;
+}
+
+
+
+
+
+
+
+
+.best5seller{
+  max-width: 1314px ;
+  height: 540px ;
+  margin: 0 auto;
+  margin-top: 150px ;
+  }
+  .best5seller > .text{
+  max-width: 1200px ;
+  height: 100px ;
+  margin: 0 auto ;
+  }
+  .best5seller > .text > p{
+    font-size: 32px ;
+    text-align: center ;
+    line-height: 100px ;
+  }
+  .best5seller > .item-wrap02{
+    width: 1200px ;
+    height: 400px;
+    margin: 0 auto ;
+  }
+  .best5seller > .item-wrap02 > .item-box{
+    width: 1200px ;
+    height: 280px ;
+    margin: 0 auto ;
+  }
+  .best5seller > .item-wrap02 > .item-box > .item{
+    width: 220px ;
+    height: 280px ;
+    margin-right: 10px ;
+    margin-left: 10px;
+  }
+  
+  .best5seller > .item-wrap02 > .item-box > .item:last-child{
+    margin-right: -10px ;
+  }
+
+  .best5seller > .item-wrap02 > .item-box > .item > .img{
+    width: 220px ;
+    height: 220px ;
+    border-radius: 50% ;
+    box-shadow: 5px 15px 10px rgb(0 0 0 / 10%);
+    overflow: hidden ;
+    display: flex ;
+  }
+  .best5seller > .item-wrap02 > .item-box > .item:hover > .img{
+    transform : scale(1.2 , 1.2);
+    transition: 1s ;
+  }
+  .best5seller > .item-wrap02 > .item-box > .item > .text{
+    width: 220px;
+    height: 25px ;
+    margin-top: 20px ;
+    font-size: 14PX ;
+    text-align: center ;
+  }
+
+
+
+
+
+
+  .stage-background{
+    max-width: 1920px ;
+    height: 1100px ;
+    background-color: black;
+    margin: 0 auto ;
+  }
+  .stage{
+    max-width: 1314px ;
+    height: 1100px ;
+    margin: 0 auto ;
+    background-color: black ;
+    margin-top: 50px ;
+  }
+
+
+
+  .stage > .text{
+    max-width: 1200px ;
+    height: 100px ; 
+    margin: 0 auto ;
+  }
+  .stage > .text > p{
+    font-size: 32px ;
+    text-align: center ;
+    line-height: 180px ;
+    color: white ;
+  }
+
+  
+
+
+  .stage > .stage-wrap{
+    width: 1200px ;
+    height: 800px ; 
+    margin: 0 auto ;
+    margin-top: 75px ;
+    overflow: hidden ;
+  }
+
+  .stage > .stage-wrap .stage-box{
+    width: 1200px ;
+    height: 800px ; 
+    margin: 0 auto ;
+  }
+  .stage > .stage-wrap .stage-box > .section01{
+    width: 565px ;
+    height: 800px ;
+  }
+
+.stage > .stage-wrap .stage-box > .section01 > .img{
+  width: 525px ;
+  height: 600px ;
+  margin: 0 auto ;
+  position: relative ;
+}
+.stage > .stage-wrap .stage-box > .section01 > .img > .pick{
+  width: 150px ;
+  height: 45px ;
+  background-color: hotpink ;
+  margin-left: -20px ;
+  margin-top: 20px ;
+  position: absolute ;
+  color: white ;
+  font-size: 24px ;
+  text-align: center ;
+  line-height: 40px ;
+}
+.stage > .stage-wrap .stage-box > .section01 > .text-box{
+  width: 525px ;
+  height: 120px ;
+  margin: 0 auto ;
+} 
+.stage > .stage-wrap .stage-box > .section01 > .text-box > p{
+  color: white ;
+  font-size: 24px ;
+  padding-top: 20px ;
+  line-height: 30px ;
+  box-sizing: border-box ;
+}
+.stage > .stage-wrap .stage-box > .section01 > .tag{
+  width: 525px ;
+  height: 23px ;
+  color: #bbb ;
+  font-size: 11px ;
+  margin: 0 auto ;
+}
+
+
+.stage > .stage-wrap .stage-box > .line{
+    width: 1px ;
+    height: 800px ;
+    background-color: white ;
+    margin-right: 34.5px ;
+    margin-left: 34.5px ;
+}
+.stage > .stage-wrap .stage-box > .section02{
+    width: 565px ;
+    height: 800px ;
+}
+.stage > .stage-wrap .stage-box > .section02 > .img{
+  width: 525px ;
+  height: 600px ;
+  margin: 0 auto ;
+  position: relative ;
+}
+.stage > .stage-wrap .stage-box > .section02 > .img > .pick{
+  width: 150px ;
+  height: 45px ;
+  background-color: hotpink ;
+  margin-left: -20px ;
+  margin-top: 20px ;
+  position: absolute ;
+  color: white ;
+  font-size: 24px ;
+  text-align: center ;
+  line-height: 40px ;
+}
+.stage > .stage-wrap .stage-box > .section02 > .text-box{
+  width: 525px ;
+  height: 120px ;
+  margin: 0 auto ;
+} 
+.stage > .stage-wrap .stage-box > .section02 > .text-box > p{
+  color: white ;
+  font-size: 24px ;
+  padding-top: 20px ;
+  line-height: 30px ;
+  box-sizing: border-box ;
+}
+.stage > .stage-wrap .stage-box > .section02 > .tag{
+  width: 525px ;
+  height: 23px ;
+  margin: 0 auto ;
+  color: #ddd ;
+  font-size: 11px ;
+}
+
+
+
+
+
+
+
+
+.footer-wrap{
+  max-width: 1920px ;
+  height: 200px ;
+  margin: 0 auto ;
+}
+
+.footer-wrap > .footer{
+  width: 1200px ;
+  height: 200px ;
+  background-color: white ;
+  margin: 0 auto ;
+  margin-top: 75px ;
+}
+.footer-wrap > .footer > .section01{
+  width: 100% ;
+  height: 73px ;
+  margin-bottom: 15px ;
+}
+
+
+.footer-wrap > .footer > .section01 > .box01{
+  width: 160px ;
+  height: 73px ;
+}
+.footer-wrap > .footer > .section01 > .box01 > .box01-1 > p{
+  font-size: 14px ;
+}
+.footer-wrap > .footer > .section01 > .box01 > .box01-2 > p{
+  font-size: 24px ;
+  margin-top: 5px ;
+}
+.footer-wrap > .footer > .section01 > .box01 > .box01-3 > p{
+  font-size: 11px ;
+  margin-top: 5px ;
+}
+
+
+.footer-wrap > .footer > .section01 > .box02{
+  width: 100px ;
+  height: 25px ;
+  margin-left: 15px ;
+  margin-top: 24px ;
+  font-size: 14px ;
+  text-align: center ;
+  line-height: 23px ;
+  border: 0.5px solid #ddd;
+}
+.footer-wrap > .footer > .section01 > .line{
+  width: 1px ;
+  height: 73px ;
+  background-color: #ddd ;
+  margin-left: 25px ;
+  margin-right: 25px ;
+}
+.footer-wrap > .footer > .section01 > .box03{
+  width: 320px ;
+  height: 73px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-1{
+  width: 100% ;
+  height: 20px ;
+  margin-bottom: 3.5px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-1 > p{
+  font-size: 14px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .line{
+  width: 100% ;
+  height: 1px ;
+  background-color: black ;
+  margin-bottom: 3.5px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-2{
+  width: 100% ;
+  height: 45px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-2 > .box03-2-1 > p{
+  font-size: 11px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-2 > .box03-2-2{
+  width: 62px ;
+  margin-left: 33.5px ;
+}
+.footer-wrap > .footer > .section01 > .box03 > .box03-2 > .box03-2-2 > P{
+  font-size: 11px ;
+}
+
+.footer-wrap > .footer > .section02{
+  width: 1200px ;
+  height: 40px ;
+  background-color: #ddd ;
+  margin-bottom: 10px ;
+}
+.footer-wrap > .footer > .section02 > .text{
+  margin-right: 30px ;
+  margin-left: 10px ;
+  margin-top: 10px ; 
+}
+.footer-wrap > .footer > .section02 > .text > p{
+  font-size: 14px ;
+  opacity: 0.8 ;
+}
+.footer-wrap > .footer > .section03 > .box04{
+  width: 600px ;
+  height: 46px ;
+}
+.footer-wrap > .footer > .section03 > .box04 > p{
+  font-size: 11px ;
+  margin-top: 3px ;
+}
+.footer-wrap > .footer > .section03 > .box05{
+  width: 220px ;
+  height: 46px ;
+}
+.footer-wrap > .footer > .section03 > .box05 > .text > p{
+  font-size: 11px ;
+  line-height: 90px ;
+}
+
+
+.up-bar{
+  width: 50px ;
+  height: 150px ;
+  background-color: black  ;
+  position:fixed;
+  bottom: 0 ;
+  right: 10px ;
+}
+.up-bar > .icon{
+  width: 50px ;
+  height: 50px ;
+}
+
+.up-bar > .icon > ul > li > a{
+  min-width: 100%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
